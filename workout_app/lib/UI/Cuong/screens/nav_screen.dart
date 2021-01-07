@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:workout_app/UI/Cuong/widgets/custom_tab_bar.dart';
+import 'package:workout_app/UI/bmi/screens/input_page.dart';
+import 'package:workout_app/UI/modules/saved.dart';
 
 import 'galery.dart';
 import 'home.dart';
@@ -14,14 +16,14 @@ class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomePage(),
     Categories(),
-    Scaffold(),
-    Scaffold(),
+    Saved(),
+    InputPage(),
   ];
   final List<IconData> _icons = const [
     Icons.home_filled,
     FontAwesomeIcons.listAlt,
     Icons.favorite,
-    FontAwesomeIcons.user,
+    FontAwesomeIcons.calculator,
   ];
   int _selectedIndex = 0;
 

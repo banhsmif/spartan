@@ -33,10 +33,10 @@ class HangoverFit extends StatelessWidget {
   }
 }
 
-class OneHITTWonder extends StatelessWidget {
+class OneHIITWonder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return noidung('One HITT Wonder', 'assets/images/OneHITTWonder.png');
+    return noidung('One HIIT Wonder', 'assets/images/OneHIITWonder.png');
   }
 }
 
@@ -118,9 +118,8 @@ List<Widget> listUpper = [
   FullBodyMoneyMaker(),
   MissionFit(),
   HangoverFit(),
-  OneHITTWonder(),
+  OneHIITWonder(),
   BodyShock(),
   BodyKiller(),
   FullBodyHype(),
 ];
-
