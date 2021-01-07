@@ -183,13 +183,34 @@ class _HomePageState extends State<HomePage> {
                       children: <Widget>[
                         makeItem(
                             image: 'assets/images/MillionnaireSquats.png',
-                            title: 'Millionaire Squats'),
+                            title: 'Millionaire Squats',
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          MillionaireSquats()));
+                            }),
                         makeItem(
-                            image: 'assets/images/CantWalk.png',
-                            title: "Can't Walk"),
+                          image: 'assets/images/CantWalk.png',
+                          title: "Can't Walk",
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CantWalk()));
+                          },
+                        ),
                         makeItem(
-                            image: 'assets/images/OneHIIT.png',
-                            title: 'One HIIT Wonder'),
+                          image: 'assets/images/OneHIIT.png',
+                          title: 'One HIIT Wonder',
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => OneHITTWonder()));
+                          },
+                        ),
                       ],
                     ),
                   ),

@@ -60,6 +60,23 @@ class FullBodyHype extends StatelessWidget {
   }
 }
 
+class MillionaireSquats extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('Millionaire Squats');
+  }
+}
+
+class CantWalk extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('Can\'t Walk');
+  }
+}
+
+
+
+
 Widget noidung(String name) => Scaffold(
       body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
         Header(),

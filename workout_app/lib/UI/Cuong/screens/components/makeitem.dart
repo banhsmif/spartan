@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget makeItem({image, title,Function onTap()}) {
+Widget makeItem({image, title, onTap()}) {
   return GestureDetector(
     onTap: onTap,
     child: AspectRatio(
