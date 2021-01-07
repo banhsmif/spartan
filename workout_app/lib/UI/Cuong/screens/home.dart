@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workout_app/UI/Cuong/common/common.dart';
+import 'package:workout_app/UI/modules/packageWorkout/packageUI.dart';
 import 'components/makeitem.dart';
 import 'lowerbody.dart';
 import 'upperbody.dart';
@@ -123,21 +124,34 @@ class _HomePageState extends State<HomePage> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
-                        GestureDetector(
-                          child: makeItem(
-                              image: 'assets/images/FatRemoval.png',
-                              title: 'Fat Removal'),
-                        ),
-                        GestureDetector(
-                          child: makeItem(
-                              image: 'assets/images/FullBodyMoneyMaker.png',
-                              title: 'Full Body Money Maker'),
-                        ),
-                        GestureDetector(
-                          child: makeItem(
-                              image: 'assets/images/MissionFit.png',
-                              title: 'Mission Fit'),
-                        ),
+                        makeItem(
+                            image: 'assets/images/FatRemoval.png',
+                            title: 'Fat Removal',
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => FatRemoval()));
+                            }),
+                        makeItem(
+                            image: 'assets/images/FullBodyMoneyMaker.png',
+                            title: 'Full Body Money Maker',
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          FullBodyMoneyMaker()));
+                            }),
+                        makeItem(
+                            image: 'assets/images/MissionFit.png',
+                            title: 'Mission Fit',
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => MissionFit()));
+                            }),
                       ],
                     ),
                   ),
@@ -167,24 +181,15 @@ class _HomePageState extends State<HomePage> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
-                        GestureDetector(
-                          onTap: () {},
-                          child: makeItem(
-                              image: 'assets/images/MillionnaireSquats.png',
-                              title: 'Millionaire Squats'),
-                        ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: makeItem(
-                              image: 'assets/images/CantWalk.png',
-                              title: "Can't Walk"),
-                        ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: makeItem(
-                              image: 'assets/images/OneHIIT.png',
-                              title: 'One HIIT Wonder'),
-                        ),
+                        makeItem(
+                            image: 'assets/images/MillionnaireSquats.png',
+                            title: 'Millionaire Squats'),
+                        makeItem(
+                            image: 'assets/images/CantWalk.png',
+                            title: "Can't Walk"),
+                        makeItem(
+                            image: 'assets/images/OneHIIT.png',
+                            title: 'One HIIT Wonder'),
                       ],
                     ),
                   ),

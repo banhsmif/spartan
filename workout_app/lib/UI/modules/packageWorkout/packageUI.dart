@@ -75,10 +75,10 @@ Widget noidung(String name) => Scaffold(
         SizedBox(
           height: 22,
         ),
-        WorkoutItem(nameWorkout: wPushup, rep: 15),
-        WorkoutItem(nameWorkout: wMountain, rep: 40),
-        WorkoutItem(nameWorkout: wLunges, rep: 20),
-        WorkoutItem(nameWorkout: wPushup, rep: 10),
-        WorkoutItem(nameWorkout: wPike, rep: 10),
+        WorkoutItem(nameWorkout: wPushup, rep: '15 reps'),
+        WorkoutItem(nameWorkout: wMountain, rep: '40 seconds'),
+        WorkoutItem(nameWorkout: wLunges, rep: '20 reps'),
+        WorkoutItem(nameWorkout: wPushup, rep: '10 reps'),
+        WorkoutItem(nameWorkout: wPike, rep: '10 reps'),
       ]),
     );

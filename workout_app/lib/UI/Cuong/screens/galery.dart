@@ -33,14 +33,11 @@ class _CategoriesState extends State<Categories> {
         Expanded(
           child: ListView(
             children: [
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
-              WorkoutItem(nameWorkout: 'a', rep: 5),
+              WorkoutItem(nameWorkout: 'a', rep: 'Beginner'),
+              WorkoutItem(nameWorkout: 'a', rep: '5'),
+              WorkoutItem(nameWorkout: 'a', rep: '5'),
+              WorkoutItem(nameWorkout: 'a', rep: '5'),
+              WorkoutItem(nameWorkout: 'a', rep: '5'),
             ],
           ),
         )

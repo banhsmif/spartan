@@ -3,8 +3,7 @@ import 'package:workout_app/UI/common/constant.dart';
 import 'package:workout_app/UI/modules/workout/workout.dart';
 
 class WorkoutItem extends StatelessWidget {
-  final String nameWorkout;
-  final int rep;
+  final String nameWorkout, rep;
 
   WorkoutItem({@required this.nameWorkout, @required this.rep});
 
@@ -38,7 +37,7 @@ class WorkoutItem extends StatelessWidget {
                     style: kSmallTextStyle,
                   ),
                   Text(
-                    '$rep reps',
+                    '$rep',
                     style: kRepStyle,
                   ),
                 ],

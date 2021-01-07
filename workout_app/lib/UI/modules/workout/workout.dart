@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workout_app/UI/common/component/header.dart';
+import 'package:workout_app/UI/common/component/item.dart';
 import 'package:workout_app/UI/common/constant.dart';
 
 class WorkoutExcercise extends StatelessWidget {
