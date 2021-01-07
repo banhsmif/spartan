@@ -10,7 +10,7 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  List<String> categories = ["Chest", "Trap", "Abs", "Legs"];
+  List<String> categories = ["Chest", "Back", "Abs", "Legs"];
   // By default our first item will be selected
   int selectedIndex = 0;
   @override
@@ -41,24 +41,22 @@ class _CategoriesState extends State<Categories> {
   List<Widget> listBaiTap = [
     ListView(
       children: [
-        WorkoutItem(nameWorkout: wPushup, rep: 'Beginner'),
-        WorkoutItem(nameWorkout: wDecline, rep: 'Beginner'),
-        WorkoutItem(nameWorkout: 'Diamond Push Up', rep: 'Beginner'),
-        WorkoutItem(nameWorkout: 'Narrow Push Up', rep: 'Beginner'),
-        WorkoutItem(nameWorkout: 'Incline Push Up', rep: 'Beginner'),
-        WorkoutItem(nameWorkout: 'Clap Push Up', rep: 'Advanced'),
-        WorkoutItem(nameWorkout: 'In Out Push Up', rep: 'Beginner'),
-        WorkoutItem(nameWorkout: 'Narrow Push Up', rep: 'Beginner')
+        WorkoutItem(nameWorkout: wPushup, rep: 'Beginner',image: 'assets/images/pushup.png',),
+        WorkoutItem(nameWorkout: wDecline, rep: 'Beginner',image: 'assets/images/shoulder.png',),
+        WorkoutItem(nameWorkout: 'Narrow Push Up', rep: 'Beginner',image: 'assets/images/pseudo.png',),
+        WorkoutItem(nameWorkout: 'Clap Push Up', rep: 'Advanced',image: 'assets/images/clap.png',),
+        WorkoutItem(nameWorkout: 'Incline Push Up', rep: 'Beginner',image: 'assets/images/pushup.png',),
+        WorkoutItem(nameWorkout: 'In Out Push Up', rep: 'Beginner',image: 'assets/images/pushup.png',),
       ],
     ),
     ListView(
-      children: [WorkoutItem(nameWorkout: wPike, rep: 'Advanced')],
+      children: [WorkoutItem(nameWorkout: wPike, rep: 'Advanced',image: 'assets/images/pushup.png',)],
     ),
     ListView(
-      children: [WorkoutItem(nameWorkout: wCrunch, rep: 'Advanced')],
+      children: [WorkoutItem(nameWorkout: wCrunch, rep: 'Advanced',image: 'assets/images/pushup.png',)],
     ),
     ListView(
-      children: [WorkoutItem(nameWorkout: wSquats, rep: 'Advanced')],
+      children: [WorkoutItem(nameWorkout: wSquats, rep: 'Advanced',image: 'assets/images/pushup.png',)],
     )
   ];
 
