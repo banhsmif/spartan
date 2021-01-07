@@ -12,11 +12,8 @@ const kSmallTextStyle = TextStyle(
   fontFamily: 'SFPRo',
   fontSize: 26,
 );
-const kLvStyle = TextStyle(
-  fontFamily: 'SFPRo',
-  fontSize: 20,
-  fontWeight: FontWeight.bold
-);
+const kLvStyle =
+    TextStyle(fontFamily: 'SFPRo', fontSize: 20, fontWeight: FontWeight.bold);
 const kFontMainTitle = TextStyle(
     fontSize: 40,
     fontFamily: 'SFPro',
@@ -37,7 +34,6 @@ const kViewAll = TextStyle(
 const kDefaultPaddin = 20.0;
 const kBackgroundColorViewAll = Color(0xFFFFFFFF);
 
-
 const kRepStyle =
     TextStyle(color: kRepColors, fontSize: 15, fontFamily: 'SFPRo');
 const kNomalRep = 12;
@@ -46,5 +42,19 @@ const kHighRep = 15;
 
 const kLowRep = 8;
 
-
 // khai bao link bai tap
+const wBurpee = 'Burpees';
+const wJjack = 'Jumping Jack';
+const wPushup = 'Push Ups';
+const wHighknee = 'High Knees';
+const wMountain = 'Mountain Climbers';
+const wPlank = 'Plank';
+const wSquats = 'Squats';
+const wLunges = 'Lunges';
+const wPike = 'Pike Push Ups';
+const wCrunch = 'Crunches';
+const wSideRight = 'Side Plank Right Side';
+const wSideLeft = 'Side Plank Left Side';
+const wChair = 'Chair Dips';
+const wChin = 'Chin Ups';
+const wDecline = 'Decline Push Ups';

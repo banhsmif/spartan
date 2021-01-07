@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'UI/modules/fatremoval/combo_screen.dart';
+import 'UI/modules/packageWorkout/packageUI.dart';
 
 void main() {
   runApp(MyApp());
