@@ -49,3 +49,16 @@ class WorkoutItem extends StatelessWidget {
     );
   }
 }
+
+List<Widget> upperInfo = [
+  Column(
+    children: [
+      WorkoutItem(nameWorkout: wBurpee, rep: '15 reps'),
+      WorkoutItem(nameWorkout: wJjack, rep: '1:00 min'),
+      WorkoutItem(nameWorkout: wPushup, rep: '15 reps'),
+      WorkoutItem(nameWorkout: wHighknee, rep: '0:30 min'),
+      WorkoutItem(nameWorkout: wMountain, rep: '0:32 min'),
+      WorkoutItem(nameWorkout: wPlank, rep: '0:48 min'),
+    ],
+  )
+];

@@ -3,7 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:workout_app/UI/Cuong/common/common.dart';
 import 'package:workout_app/UI/Cuong/models/exercises.dart';
 import 'package:workout_app/UI/modules/packageWorkout/packageUI.dart';
+
 class UpperBody extends StatelessWidget {
+  int selected = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,13 +38,15 @@ class UpperBody extends StatelessWidget {
                       childAspectRatio: 0.75,
                     ),
                     itemBuilder: (context, index) => ItemCard(
-                          exercises: upperbody[index],
-                          press: () => Navigator.push(
+                        exercises: upperbody[index],
+                        press: () {
+                          selected = index;
+                          Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => FatRemoval(),
-                              )),
-                        )),
+                                builder: (context) => listPack[selected],
+                              ));
+                        })),
               ),
             ),
           ],
@@ -89,13 +93,6 @@ class ItemCard extends StatelessWidget {
                     color: Colors.red,
                     image: DecorationImage(
                         image: AssetImage(exercises.image), fit: BoxFit.cover)),
-                // child: Hero(
-                //   tag: "${exercises.id}",
-                //   child: Image.asset(
-                //     exercises.image,
-                //     fit: BoxFit.cover,
-                //   ),
-                // ),
               ),
             ),
             Padding(
@@ -120,3 +117,4 @@ class ItemCard extends StatelessWidget {
     );
   }
 }
+

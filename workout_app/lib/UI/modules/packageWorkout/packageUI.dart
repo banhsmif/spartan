@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:workout_app/UI/common/component/header.dart';
 import 'package:workout_app/UI/common/component/item.dart';
 import 'package:workout_app/UI/common/component/tittle.dart';
-import 'package:workout_app/UI/common/constant.dart';
 
 class FatRemoval extends StatelessWidget {
   @override
@@ -64,7 +63,8 @@ class FullBodyHype extends StatelessWidget {
 class MillionaireSquats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return noidung('Millionaire Squats', 'assets/images/MillionaireSquats.png');
+    return noidung(
+        'Millionaire Squats', 'assets/images/MillionnaireSquats.png');
   }
 }
 
@@ -92,10 +92,17 @@ Widget noidung(String name, String image) => Scaffold(
         SizedBox(
           height: 22,
         ),
-        WorkoutItem(nameWorkout: wPushup, rep: '15 reps'),
-        WorkoutItem(nameWorkout: wMountain, rep: '40 seconds'),
-        WorkoutItem(nameWorkout: wLunges, rep: '20 reps'),
-        WorkoutItem(nameWorkout: wPushup, rep: '10 reps'),
-        WorkoutItem(nameWorkout: wPike, rep: '10 reps'),
+        upperInfo[0]
       ]),
     );
+
+List<Widget> listPack = [
+  FatRemoval(),
+  FullBodyMoneyMaker(),
+  MissionFit(),
+  HangoverFit(),
+  OneHITTWonder(),
+  BodyShock(),
+  BodyKiller(),
+  FullBodyHype(),
+];

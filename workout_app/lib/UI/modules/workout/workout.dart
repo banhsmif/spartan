@@ -7,7 +7,7 @@ class WorkoutExcercise extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
-        Header(),
+        Header(pic :'assets/images/MillionnaireSquats.png'),
         SizedBox(
           height: 25,
         ),

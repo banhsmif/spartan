@@ -30,15 +30,6 @@ class Header extends StatelessWidget {
                     fit: BoxFit.cover)),
             height: MediaQuery.of(context).size.height / 3,
             alignment: Alignment.topLeft),
-        // Padding(
-        //   padding: EdgeInsets.only(top: 30, left: 10),
-        //   child: IconButton(
-        //     icon: Icon(Icons.arrow_back_ios),
-        //     color: Colors.white,
-        //     onPressed: () {},
-        //     // => Navigator.pop(context)
-        //   ),
-        // ),
       ],
     );
   }
