@@ -113,7 +113,7 @@ Widget noidung(String name, String image) {
   );
 }
 
-List<Widget> listPack = [
+List<Widget> listUpper = [
   FatRemoval(),
   FullBodyMoneyMaker(),
   MissionFit(),
@@ -123,3 +123,4 @@ List<Widget> listPack = [
   BodyKiller(),
   FullBodyHype(),
 ];
+

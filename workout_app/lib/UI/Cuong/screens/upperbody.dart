@@ -44,7 +44,7 @@ class UpperBody extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => listPack[selected],
+                                builder: (context) => listUpper[selected],
                               ));
                         })),
               ),
