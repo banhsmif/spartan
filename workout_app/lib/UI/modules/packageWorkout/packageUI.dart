@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:workout_app/UI/common/component/header.dart';
 import 'package:workout_app/UI/common/component/item.dart';
 import 'package:workout_app/UI/common/component/tittle.dart';
@@ -75,26 +76,42 @@ class CantWalk extends StatelessWidget {
   }
 }
 
-Widget noidung(String name, String image) => Scaffold(
-      body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
-        Header(
-          pic: image,
-        ),
-        SizedBox(
-          height: 25,
-        ),
-        TittlePack(
-          name: name,
-          round: 4,
-          excercise: 5,
-          level: 'No equipment',
-        ),
-        SizedBox(
-          height: 22,
-        ),
-        upperInfo[0]
-      ]),
-    );
+Widget noidung(String name, String image) {
+  return Scaffold(
+    body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
+      Header(
+        pic: image,
+      ),
+      SizedBox(
+        height: 25,
+      ),
+      TittlePack(
+        name: name,
+        round: 4,
+        excercise: 5,
+        level: 'No equipment',
+      ),
+      SizedBox(
+        height: 22,
+      ),
+      upperInfo[0]
+    ]),
+    floatingActionButton: Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        Padding(
+            padding: EdgeInsets.only(bottom: 20, left: 20),
+            child: FlatButton(
+              onPressed: () {},
+              child: Icon(
+                FontAwesomeIcons.play,
+                color: Colors.black,
+              ),
+            ))
+      ],
+    ),
+  );
+}
 
 List<Widget> listPack = [
   FatRemoval(),

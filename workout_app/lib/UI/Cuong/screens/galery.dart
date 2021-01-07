@@ -41,22 +41,139 @@ class _CategoriesState extends State<Categories> {
   List<Widget> listBaiTap = [
     ListView(
       children: [
-        WorkoutItem(nameWorkout: wPushup, rep: 'Beginner',image: 'assets/images/pushup.png',),
-        WorkoutItem(nameWorkout: wDecline, rep: 'Beginner',image: 'assets/images/shoulder.png',),
-        WorkoutItem(nameWorkout: 'Narrow Push Up', rep: 'Beginner',image: 'assets/images/pseudo.png',),
-        WorkoutItem(nameWorkout: 'Clap Push Up', rep: 'Advanced',image: 'assets/images/clap.png',),
-        WorkoutItem(nameWorkout: 'Incline Push Up', rep: 'Beginner',image: 'assets/images/pushup.png',),
-        WorkoutItem(nameWorkout: 'In Out Push Up', rep: 'Beginner',image: 'assets/images/pushup.png',),
+        WorkoutItem(
+          nameWorkout: wPushup,
+          rep: 'Beginner',
+          image: 'assets/images/pushup.png',
+        ),
+        WorkoutItem(
+          nameWorkout: wDecline,
+          rep: 'Beginner',
+          image: 'assets/images/shoulder.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Narrow Push Up',
+          rep: 'Beginner',
+          image: 'assets/images/pseudo.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Clap Push Up',
+          rep: 'Advanced',
+          image: 'assets/images/clap.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Incline Push Up',
+          rep: 'Beginner',
+          image: 'assets/images/pushup.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'In Out Push Up',
+          rep: 'Beginner',
+          image: 'assets/images/pushup.png',
+        ),
       ],
     ),
     ListView(
-      children: [WorkoutItem(nameWorkout: wPike, rep: 'Advanced',image: 'assets/images/pushup.png',)],
+      children: [
+        WorkoutItem(
+          nameWorkout: wPike,
+          rep: 'Advanced',
+          image: 'assets/images/pushup.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Pseudo',
+          rep: 'Beginner',
+          image: 'assets/images/pseudo.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Tower pull',
+          rep: 'Advanced',
+          image: 'assets/images/ass.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Scapula Push Down',
+          rep: 'Advanced',
+          image: 'assets/images/BodyKiller.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Boat',
+          rep: 'Beginner',
+          image: 'assets/images/clap.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Butterfly',
+          rep: 'Advanced',
+          image: 'assets/images/abs.png',
+        ),
+      ],
     ),
     ListView(
-      children: [WorkoutItem(nameWorkout: wCrunch, rep: 'Advanced',image: 'assets/images/pushup.png',)],
+      children: [
+        WorkoutItem(
+          nameWorkout: wCrunch,
+          rep: 'Advanced',
+          image: 'assets/images/pushup.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Plank',
+          rep: 'Beginner',
+          image: 'assets/images/ass.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'FatRemoval Plank',
+          rep: 'Beginner',
+          image: 'assets/images/FatRemoval.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Size Raise',
+          rep: 'Advanced',
+          image: 'assets/images/FullBodyMoneyMaker.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Crossbody Crunch',
+          rep: 'Beginner',
+          image: 'assets/images/pushup.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'wCrunch',
+          rep: 'Advanced',
+          image: 'assets/images/BodyShock.png',
+        ),
+      ],
     ),
     ListView(
-      children: [WorkoutItem(nameWorkout: wSquats, rep: 'Advanced',image: 'assets/images/pushup.png',)],
+      children: [
+        WorkoutItem(
+          nameWorkout: wSquats,
+          rep: 'Advanced',
+          image: 'assets/images/squats.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Leg pull',
+          rep: 'Advanced',
+          image: 'assets/images/legs.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Lunges',
+          rep: 'Advanced',
+          image: 'assets/images/lunges.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'QuadBoost',
+          rep: 'Advanced',
+          image: 'assets/images/Wake.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'QuadBoost-Alt',
+          rep: 'Advanced',
+          image: 'assets/images/MillionnaireSquats.png',
+        ),
+        WorkoutItem(
+          nameWorkout: 'Pike',
+          rep: 'Advanced',
+          image: 'assets/images/pike.png',
+        ),
+      ],
     )
   ];
 
