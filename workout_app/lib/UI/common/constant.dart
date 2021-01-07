@@ -45,3 +45,6 @@ const kNomalRep = 12;
 const kHighRep = 15;
 
 const kLowRep = 8;
+
+
+// khai bao link bai tap

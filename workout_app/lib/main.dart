@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:workout_app/UI/modules/combo/combo_screen.dart';
+import 'UI/modules/fatremoval/combo_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,10 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Login',
-      home: WorkoutPack(
-        name: 'Push up',
-        level: 'Beginner',
-      ),
+      home:FatRemoval(),
     );
   }
 }
