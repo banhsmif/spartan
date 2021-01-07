@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:workout_app/UI/common/component/header.dart';
 import 'package:workout_app/UI/common/constant.dart';
-import 'package:workout_app/UI/modules/fatremoval/component/header.dart';
 
 class WorkoutExcercise extends StatelessWidget {
   @override

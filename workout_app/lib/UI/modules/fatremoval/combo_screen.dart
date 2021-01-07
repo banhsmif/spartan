@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'component/header.dart';
-import 'component/item.dart';
-import 'component/tittle.dart';
+import 'package:workout_app/UI/common/component/header.dart';
+import 'package:workout_app/UI/common/component/item.dart';
+import 'package:workout_app/UI/common/component/tittle.dart';
 
 class FatRemoval extends StatelessWidget {
   final String name, level;
