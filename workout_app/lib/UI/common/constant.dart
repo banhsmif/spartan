@@ -7,6 +7,8 @@ const kMainTittleStyle = TextStyle(
   fontFamily: 'SFPro',
   color: Colors.black,
 );
+const kTextColor = Color(0xFF535353);
+const kTextLightColor = Color(0xFFBEBEBE);
 
 const kSmallTextStyle = TextStyle(
   fontFamily: 'SFPRo',
@@ -31,7 +33,6 @@ const kViewAll = TextStyle(
     color: Color(0xFF696969),
     fontSize: 14,
     letterSpacing: 2);
-const kDefaultPaddin = 20.0;
 const kBackgroundColorViewAll = Color(0xFFFFFFFF);
 
 const kRepStyle =
@@ -41,6 +42,8 @@ const kNomalRep = 12;
 const kHighRep = 15;
 
 const kLowRep = 8;
+
+const kDefaultPaddin = 40.0;
 
 // khai bao link bai tap
 const wBurpee = 'Burpees';
@@ -58,3 +61,4 @@ const wSideLeft = 'Side Plank Left Side';
 const wChair = 'Chair Dips';
 const wChin = 'Chin Ups';
 const wDecline = 'Decline Push Ups';
+

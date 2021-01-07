@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  
+  final String pic;
+  Header({this.pic});
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -25,7 +26,7 @@ class Header extends StatelessWidget {
                     BorderRadius.only(bottomLeft: Radius.circular(48.0)),
                 color: Colors.yellow,
                 image: DecorationImage(
-                    image: AssetImage('assets/images/pushup.png'),
+                    image: AssetImage(pic),
                     fit: BoxFit.cover)),
             height: MediaQuery.of(context).size.height / 3,
             alignment: Alignment.topLeft),

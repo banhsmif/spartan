@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:workout_app/UI/Cuong/common/common.dart';
 import 'package:workout_app/UI/common/component/item.dart';
+import 'package:workout_app/UI/common/constant.dart';
 
 // We need satefull widget for our categories
 
@@ -31,19 +31,36 @@ class _CategoriesState extends State<Categories> {
           ),
         ),
         Expanded(
-          child: ListView(
-            children: [
-              WorkoutItem(nameWorkout: 'a', rep: 'Beginner'),
-              WorkoutItem(nameWorkout: 'a', rep: '5'),
-              WorkoutItem(nameWorkout: 'a', rep: '5'),
-              WorkoutItem(nameWorkout: 'a', rep: '5'),
-              WorkoutItem(nameWorkout: 'a', rep: '5'),
-            ],
-          ),
-        )
+            child: Container(
+          child: listBaiTap[selectedIndex],
+        ))
       ],
     );
   }
+
+  List<Widget> listBaiTap = [
+    ListView(
+      children: [
+        WorkoutItem(nameWorkout: wPushup, rep: 'Beginner'),
+        WorkoutItem(nameWorkout: wDecline, rep: 'Beginner'),
+        WorkoutItem(nameWorkout: 'Diamond Push Up', rep: 'Beginner'),
+        WorkoutItem(nameWorkout: 'Narrow Push Up', rep: 'Beginner'),
+        WorkoutItem(nameWorkout: 'Incline Push Up', rep: 'Beginner'),
+        WorkoutItem(nameWorkout: 'Clap Push Up', rep: 'Advanced'),
+        WorkoutItem(nameWorkout: 'In Out Push Up', rep: 'Beginner'),
+        WorkoutItem(nameWorkout: 'Narrow Push Up', rep: 'Beginner')
+      ],
+    ),
+    ListView(
+      children: [WorkoutItem(nameWorkout: wPike, rep: 'Advanced')],
+    ),
+    ListView(
+      children: [WorkoutItem(nameWorkout: wCrunch, rep: 'Advanced')],
+    ),
+    ListView(
+      children: [WorkoutItem(nameWorkout: wSquats, rep: 'Advanced')],
+    )
+  ];
 
   Widget buildCategory(int index) {
     return GestureDetector(
@@ -55,7 +72,6 @@ class _CategoriesState extends State<Categories> {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
         child: Container(
-          // color: Colors.red,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -83,5 +99,3 @@ class _CategoriesState extends State<Categories> {
     );
   }
 }
-
-
