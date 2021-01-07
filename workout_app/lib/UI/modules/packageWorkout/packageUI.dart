@@ -7,73 +7,68 @@ import 'package:workout_app/UI/common/constant.dart';
 class FatRemoval extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
-        Header(),
-        SizedBox(
-          height: 25,
-        ),
-        TittlePack(
-          name: 'Fat Removal',
-          round: 4,
-          excercise: 6,
-          level: 'No equipment',
-        ),
-        SizedBox(
-          height: 22,
-        ),
-        WorkoutItem(nameWorkout: wBurpee, rep: 20),
-        WorkoutItem(nameWorkout: wJjack, rep: 40),
-        WorkoutItem(nameWorkout: wPushup, rep: 10),
-        WorkoutItem(nameWorkout: wHighknee, rep: 30),
-        WorkoutItem(nameWorkout: wMountain, rep: 30),
-        WorkoutItem(nameWorkout: wPike, rep: 10),
-      ]),
-    );
+    return noidung('Fat removal');
   }
 }
 
 class FullBodyMoneyMaker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
-        Header(),
-        SizedBox(
-          height: 25,
-        ),
-        TittlePack(
-          name: 'FullBodyMoneyMaker',
-          round: 4,
-          excercise: 6,
-          level: 'No equipment',
-        ),
-        SizedBox(
-          height: 22,
-        ),
-        WorkoutItem(nameWorkout: wSquats, rep: 20),
-        WorkoutItem(nameWorkout: wMountain, rep: 40),
-        WorkoutItem(nameWorkout: wLunges, rep: 20),
-        WorkoutItem(nameWorkout: wPushup, rep: 10),
-        WorkoutItem(nameWorkout: wPlank, rep: 20),
-        WorkoutItem(nameWorkout: wPike, rep: 10),
-      ]),
-    );
+    return noidung('Full Body Money Maker');
   }
 }
 
 class MissionFit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return noidung('Mission Fit');
+  }
+}
+
+class HangoverFit extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('Hangover Fit');
+  }
+}
+
+class OneHITTWonder extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('One HITT Wonder');
+  }
+}
+
+class BodyShock extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('Body Shock');
+  }
+}
+
+class BodyKiller extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('Body Killer');
+  }
+}
+
+class FullBodyHype extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return noidung('Full Body Hype');
+  }
+}
+
+Widget noidung(String name) => Scaffold(
       body: ListView(padding: const EdgeInsets.only(top: 0), children: <Widget>[
         Header(),
         SizedBox(
           height: 25,
         ),
         TittlePack(
-          name: 'FullBodyMoneyMaker',
-          round: 3,
+          name: name,
+          round: 4,
           excercise: 5,
           level: 'No equipment',
         ),
@@ -87,5 +82,3 @@ class MissionFit extends StatelessWidget {
         WorkoutItem(nameWorkout: wPike, rep: 10),
       ]),
     );
-  }
-}
