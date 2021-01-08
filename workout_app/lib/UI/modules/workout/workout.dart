@@ -18,22 +18,22 @@ class WorkoutExcercise extends StatelessWidget {
           name: name,
         ),
       ]),
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          Padding(
-            padding: EdgeInsets.only(bottom: 20, left: 20),
-            child: FloatingActionButton(
-              onPressed: () {},
-              backgroundColor: Colors.white,
-              child: Icon(
-                FontAwesomeIcons.heart,
-                color: Colors.black,
-              ),
-            ),
-          )
-        ],
-      ),
+      // floatingActionButton: Column(
+      //   mainAxisAlignment: MainAxisAlignment.end,
+      //   children: [
+      //     Padding(
+      //       padding: EdgeInsets.only(bottom: 20, left: 20),
+      //       child: FloatingActionButton(
+      //         onPressed: () {},
+      //         backgroundColor: Colors.white,
+      //         child: Icon(
+      //           FontAwesomeIcons.heart,
+      //           color: Colors.black,
+      //         ),
+      //       ),
+      //     )
+      //   ],
+      // ),
     );
   }
 }
